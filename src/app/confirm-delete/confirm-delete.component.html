@@ -1,0 +1,12 @@
+<div class="flex">
+    <h2 mat-dialog-title>Are you sure?</h2>
+    <button mat-icon-button mat-dialog-close aria-label="close">
+        <mat-icon>close</mat-icon>
+    </button>
+</div>
+<mat-dialog-content>Are you sure you want to remove <strong>{{data.firstname}} {{data.lastname}}</strong> from your list?</mat-dialog-content>
+<mat-dialog-actions>
+  <button mat-button mat-dialog-close mat-stroked-button>Cancel</button>
+  <!-- The mat-dialog-close directive optionally accepts a value as a result for the dialog. -->
+  <button mat-button mat-raised-button color="primary" [mat-dialog-close]="true">Confirm</button>
+</mat-dialog-actions>
